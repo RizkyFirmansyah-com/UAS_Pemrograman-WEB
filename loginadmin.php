@@ -30,6 +30,13 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" r
         </div> 
     </div> 
 </div> 
- 
+
+<script>
+    history.pushState(null, null, window.location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };
+</script>
+    
 </body> 
 </html>
